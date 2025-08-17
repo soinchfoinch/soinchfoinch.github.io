@@ -12,26 +12,22 @@
   </header>
 
   <main>
-    <table id="characterTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Species</th>
-          <th>Subpecies</th>
-          <th>Height</th>
-          <th>Birthday</th>
-          <th>Sign</th>
-          <th>Birthplace</th>
-          <th>Vehicle</th>
-          <th>Pets</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Rows inserted by JavaScript -->
-      </tbody>
-    </table>
+  <table id="characterTable">
+    <thead>
+      <tr>
+        <th data-type="string">Name</th>
+        <th data-type="date">Birthday</th>
+        <th data-type="string">Birthplace</th>
+        <th data-type="string">Species</th>
+      </tr>
+    </thead>
+    <tbody>
+    <!-- Rows will be injected from characters.json -->
+    </tbody>
+  </table>
+
+  <script defer src="js/script.js"></script>
   </main>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
