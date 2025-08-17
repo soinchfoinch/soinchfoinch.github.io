@@ -1,16 +1,194 @@
 [
-  
-{
-  "id": "char1",
-  "name": "Test",
-  "species": "",
-  "subspecies": "",
-  "height": "",
-  "birthday": "",
-  "sign": "",
-  "birthplace": "",
-  "vehicle": "",
-  "pets": ""
-}
-  
-] 
+  {
+    "id": "char1",
+    "name": "Hunter Hughes",
+    "species": "Human",
+    "subspecies": "",
+    "height": "5'6\"",
+    "birthday": "June 24th",
+    "sign": "Cancer",
+    "birthplace": "England",
+    "vehicle": "1990 Fiat 126p (Light Blue ?)",
+    "pets": ""
+  },
+  {
+    "id": "char2",
+    "name": "Giselle Rodriguez",
+    "species": "Human*",
+    "subspecies": "",
+    "height": "5'3\"",
+    "birthday": "",
+    "sign": "Scorpio",
+    "birthplace": "Puerto Rico",
+    "vehicle": "",
+    "pets": ""
+  },
+  {
+    "id": "char3",
+    "name": "Jethro Talamon",
+    "species": "Human",
+    "subspecies": "Augur",
+    "height": "6'4\"",
+    "birthday": "May 20th",
+    "sign": "Taurus",
+    "birthplace": "Louisiana",
+    "vehicle": "",
+    "pets": ""
+  },
+  {
+    "id": "char4",
+    "name": "Jess Varma",
+    "species": "Human",
+    "subspecies": "Augur",
+    "height": "5'6\"",
+    "birthday": "April 24th",
+    "sign": "Taurus",
+    "birthplace": "India",
+    "vehicle": "",
+    "pets": ""
+  },
+  {
+    "id": "char5",
+    "name": "Cairo Eissa",
+    "species": "Werewolf",
+    "subspecies": "Turned",
+    "height": "6'6\"",
+    "birthday": "Feb. 12th",
+    "sign": "Aquarius",
+    "birthplace": "Washington",
+    "vehicle": "Maybe a Chevy Blazer idk",
+    "pets": "Steel (Doberman)"
+  },
+  {
+    "id": "char6",
+    "name": "Lochlan Clyne",
+    "species": "Werewolf",
+    "subspecies": "",
+    "height": "6'2\"",
+    "birthday": "May 2nd",
+    "sign": "Taurus",
+    "birthplace": "Washington",
+    "vehicle": "Considering Chevelle",
+    "pets": "Caladrius (Gray Parrot)"
+  },
+  {
+    "id": "char7",
+    "name": "Muireann Clyne",
+    "species": "Werewolf",
+    "subspecies": "",
+    "height": "5'2\"",
+    "birthday": "June 10th",
+    "sign": "Gemini",
+    "birthplace": "Washington",
+    "vehicle": "Considering Chevy Nova",
+    "pets": ""
+  },
+  {
+    "id": "char8",
+    "name": "Ravi Martinez",
+    "species": "Werecat",
+    "subspecies": "",
+    "height": "6'1\"",
+    "birthday": "March 9th",
+    "sign": "Pisces",
+    "birthplace": "Texas",
+    "vehicle": "1980 Subaru Brat (Yellow)",
+    "pets": ""
+  },
+  {
+    "id": "char9",
+    "name": "Falin Bravo",
+    "species": "Werecat",
+    "subspecies": "",
+    "height": "5'4\"",
+    "birthday": "Nov. 22nd",
+    "sign": "Sagittarius",
+    "birthplace": "Washington",
+    "vehicle": "1987 Mazda 323 4x4 Turbo (Silver)",
+    "pets": ""
+  },
+  {
+    "id": "char10",
+    "name": "Glenmore",
+    "species": "Werebear",
+    "subspecies": "",
+    "height": "6'7\"",
+    "birthday": "",
+    "sign": "",
+    "birthplace": "Washington",
+    "vehicle": "",
+    "pets": ""
+  },
+  {
+    "id": "char11",
+    "name": "Jax Mishra",
+    "species": "Serpent",
+    "subspecies": "Naga",
+    "height": "5'6\"",
+    "birthday": "Dec. 16th",
+    "sign": "Sagittarius",
+    "birthplace": "Washington",
+    "vehicle": "1980 Volkswagen Rabbit (Yellow)",
+    "pets": ""
+  },
+  {
+    "id": "char12",
+    "name": "Todd Atwood",
+    "species": "Serpent",
+    "subspecies": "idk killer",
+    "height": "5'9\"",
+    "birthday": "March 21st",
+    "sign": "Aries",
+    "birthplace": "Louisiana",
+    "vehicle": "1987 Honda Civic CRX HF (Quartz Silver)",
+    "pets": ""
+  },
+  {
+    "id": "char13",
+    "name": "Jett",
+    "species": "Serpent",
+    "subspecies": "Gorgon",
+    "height": "5'9\"",
+    "birthday": "",
+    "sign": "",
+    "birthplace": "Washington",
+    "vehicle": "",
+    "pets": ""
+  },
+  {
+    "id": "char14",
+    "name": "River Fiore",
+    "species": "Vampire",
+    "subspecies": "Dhampir",
+    "height": "6'0\"",
+    "birthday": "April 4th",
+    "sign": "Aries",
+    "birthplace": "New York",
+    "vehicle": "1978 Pontiac Firebird Trans AM (Black/Gold)",
+    "pets": "Cleopatra (Ball python D-Stripe or Desert Ball?)"
+  },
+  {
+    "id": "char15",
+    "name": "Rain Fiore",
+    "species": "Vampire",
+    "subspecies": "Dhampir",
+    "height": "5'9\"",
+    "birthday": "April 4th",
+    "sign": "Aries",
+    "birthplace": "New York",
+    "vehicle": "1997 Lexus SC 400 Coupe (Green)",
+    "pets": ""
+  },
+  {
+    "id": "char16",
+    "name": "Bane Fiore",
+    "species": "Vampire",
+    "subspecies": "",
+    "height": "6'0\"",
+    "birthday": "June 16th",
+    "sign": "Gemini",
+    "birthplace": "Italy",
+    "vehicle": "1970-77 Alfa Romeo Montreal (Green)",
+    "pets": "Amaro (Cane Corso)"
+  }
+]
