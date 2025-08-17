@@ -9,7 +9,6 @@ fetch("data/characters.json")
         <td><a href="characters/${char.id}.html">${char.name}</a></td>
         <td>${char.species}</td>
         <td>${char.subspecies}</td>
-        <td>${char.species}</td>
         <td>${char.height}</td>
         <td>${char.birthday}</td>
         <td>${char.sign}</td>
