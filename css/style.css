@@ -1,38 +1,69 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: "Courier New", Courier, monospace;
   margin: 20px;
-  background: ##677878;
-  color: #333;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h1 {
+  color: #66ccff;
+  text-align: center;
 }
 
 #searchBox {
-  padding: 8px;
-  font-size: 1em;
+  background: #000;
+  color: #66ccff;
+  border: 1px solid #3a3a3a;
+  padding: 6px 8px;
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto 12px;
+  outline: none;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 12px;
+  background-color: #2a2a2a;
+  border: 2px solid #444;
 }
 
 th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #555;
+  padding: 8px;
   text-align: left;
 }
 
 th {
+  background-color: #333;
+  color: #66ccff;
   cursor: pointer;
-  background: #eee;
+  user-select: none;
+  position: relative;
 }
 
-tr:hover {
-  background: #f1f1f1;
+th.sort-asc::after,
+th.sort-desc::after {
+  content: "";
+  border: 5px solid transparent;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+th.sort-asc::after { border-bottom-color: #66ccff; }
+th.sort-desc::after { border-top-color: #66ccff; }
+
+tr:nth-child(even) { background-color: #242424; }
+tr:hover { background-color: #3a3a3a; }
+
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  background: #66ccff;
 }
