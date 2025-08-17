@@ -1,55 +1,16 @@
 [
   
-  {
-    "id": "char1",
-    "name": "Test",
-    "species": "",
-    "subspecies": "",
-    "height": "",
-    "birthday": "",
-    "star sign": "",
-    "birthplace": "",
-    "vehicle": "",
-    "pets": ""
-  },
-  
-  {
-    "id": "char2",
-    "name": "Test",
-    "species": "",
-    "subspecies": "",
-    "height": "",
-    "birthday": "",
-    "star sign": "",
-    "birthplace": "",
-    "vehicle": "",
-    "pets": ""
-  },
-  
-  {
-    "id": "char3",
-    "name": "Test",
-    "species": "",
-    "subspecies": "",
-    "height": "",
-    "birthday": "",
-    "star sign": "",
-    "birthplace": "",
-    "vehicle": "",
-    "pets": ""
-  },
-  
-  {
-    "id": "char4",
-    "name": "Test",
-    "species": "",
-    "subspecies": "",
-    "height": "",
-    "birthday": "",
-    "star sign": "",
-    "birthplace": "",
-    "vehicle": "",
-    "pets": ""
-  },
+{
+  "id": "char1",
+  "name": "Test",
+  "species": "",
+  "subspecies": "",
+  "height": "",
+  "birthday": "",
+  "sign": "",
+  "birthplace": "",
+  "vehicle": "",
+  "pets": ""
+}
   
 ] 
