@@ -1,5 +1,5 @@
 function parseBirthday(birthday) {
-  if (!birthday) return null;
+  if (!birthday) return 0; // treat missing dates as smallest
 
   let cleaned = birthday
     .replace(/\./g, '') 
@@ -12,63 +12,57 @@ function parseBirthday(birthday) {
     september: 9, october: 10, november: 11, december: 12
   };
 
-  let parts = cleaned.split(/\s+/);
-  if (parts.length < 2) return null;
+  const parts = cleaned.split(/\s+/);
+  if (parts.length < 2) return 0;
 
-  let month = months[parts[0].toLowerCase()];
-  let day = parseInt(parts[1], 10);
+  const month = months[parts[0].toLowerCase()];
+  const day = parseInt(parts[1], 10);
 
-  if (!month || isNaN(day)) return null;
+  if (!month || isNaN(day)) return 0;
 
   return month * 100 + day;
 }
 
-function sortTableByColumn(table, columnIndex, type, asc = true) {
+function sortTableByColumn(table, columnIndex, type = "string", asc = true) {
   const dirModifier = asc ? 1 : -1;
   const rows = Array.from(table.querySelectorAll("tbody tr"));
 
   const sortedRows = rows.sort((a, b) => {
-    let aText = a.querySelector(`td:nth-child(${columnIndex + 1})`).textContent.trim();
-    let bText = b.querySelector(`td:nth-child(${columnIndex + 1})`).textContent.trim();
+    const aText = a.querySelector(`td:nth-child(${columnIndex + 1})`)?.textContent.trim() || "";
+    const bText = b.querySelector(`td:nth-child(${columnIndex + 1})`)?.textContent.trim() || "";
 
-    if (type === "number") {
-      return (parseFloat(aText) - parseFloat(bText)) * dirModifier;
-    } else if (type === "date") {
-      let aVal = parseBirthday(aText) || 0;
-      let bVal = parseBirthday(bText) || 0;
-      return (aVal - bVal) * dirModifier;
-    } else {
-      return aText.localeCompare(bText) * dirModifier;
-    }
+    if (type === "number") return (parseFloat(aText) - parseFloat(bText)) * dirModifier;
+    if (type === "date") return (parseBirthday(aText) - parseBirthday(bText)) * dirModifier;
+    return aText.localeCompare(bText) * dirModifier;
   });
 
-  while (table.tBodies[0].firstChild) {
-    table.tBodies[0].removeChild(table.tBodies[0].firstChild);
-  }
-  table.tBodies[0].append(...sortedRows);
+  const tbody = table.querySelector("tbody");
+  tbody.innerHTML = "";
+  tbody.append(...sortedRows);
 
-  // Toggle sort state
+  // Update sort classes
   table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
-  table.querySelector(`th:nth-child(${columnIndex + 1})`).classList.toggle("th-sort-asc", asc);
-  table.querySelector(`th:nth-child(${columnIndex + 1})`).classList.toggle("th-sort-desc", !asc);
+  const th = table.querySelector(`th:nth-child(${columnIndex + 1})`);
+  if (th) {
+    th.classList.toggle("th-sort-asc", asc);
+    th.classList.toggle("th-sort-desc", !asc);
+  }
 }
 
 // Enable clicking headers to sort
 document.querySelectorAll("th").forEach((header, index) => {
   header.addEventListener("click", () => {
-    const tableElement = header.closest("table");
-    const currentIsAscending = header.classList.contains("th-sort-asc");
-    const type = header.getAttribute("data-type") || "string";
-    sortTableByColumn(tableElement, index, type, !currentIsAscending);
+    const table = header.closest("table");
+    const currentAsc = header.classList.contains("th-sort-asc");
+    const type = header.dataset.type || "string";
+    sortTableByColumn(table, index, type, !currentAsc);
   });
 });
 
-// -------- App --------
 document.addEventListener("DOMContentLoaded", () => {
   const table = document.getElementById("characterTable");
   const tbody = table.querySelector("tbody");
 
-  // Load JSON and render rows
   fetch("data/characters.json")
     .then(res => res.json())
     .then(data => {
@@ -88,6 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
         tbody.appendChild(tr);
       });
 
+      // Default sort by Name column (0)
+      sortTableByColumn(table, 0, "string", true);
+
+      // Search functionality
       const search = document.getElementById("searchBox");
       if (search) {
         search.addEventListener("input", () => {
