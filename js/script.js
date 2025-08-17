@@ -63,8 +63,57 @@ document.querySelectorAll("th").forEach((header, index) => {
   });
 });
 
-// Default sort by "Name"
-window.addEventListener("DOMContentLoaded", () => {
-  const table = document.querySelector("table");
-  sortTableByColumn(table, 0, "string", true);
+// -------- App --------
+document.addEventListener("DOMContentLoaded", () => {
+  const table = document.getElementById("characterTable");
+  const tbody = table.querySelector("tbody");
+
+  // Load JSON and render rows
+  fetch("data/characters.json")
+    .then(res => res.json())
+    .then(data => {
+      data.forEach(char => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><a href="${char.id ? `characters/${char.id}.html` : (char.page || "#")}">${char.name || ""}</a></td>
+          <td>${char.species || ""}</td>
+          <td>${char.subspecies || ""}</td>
+          <td>${char.height || ""}</td>
+          <td>${char.birthday || ""}</td>
+          <td>${char.sign || ""}</td>
+          <td>${char.birthplace || ""}</td>
+          <td>${char.vehicle || ""}</td>
+          <td>${char.pets || ""}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Make headers clickable to sort
+      const ths = Array.from(table.tHead.querySelectorAll("th"));
+      ths.forEach((th, idx) => {
+        th.addEventListener("click", () => {
+          const type = th.dataset.type || "string";
+          const isAsc = !th.classList.contains("sort-asc"); // toggle
+          clearSortIndicators(ths);
+          th.classList.add(isAsc ? "sort-asc" : "sort-desc");
+          sortByColumn(table, idx, type, isAsc);
+        });
+      });
+
+      // Default sort by Name (first column) ascending
+      const nameTh = ths[0];
+      nameTh.classList.add("sort-asc");
+      sortByColumn(table, 0, nameTh.dataset.type || "string", true);
+
+      // (Optional) Keep your search box working if present
+      const search = document.getElementById("searchBox");
+      if (search) {
+        search.addEventListener("input", () => {
+          const term = search.value.toLowerCase();
+          Array.from(tbody.rows).forEach(row => {
+            row.style.display = row.innerText.toLowerCase().includes(term) ? "" : "none";
+          });
+        });
+      }
+    });
 });
