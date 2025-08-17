@@ -1,17 +1,13 @@
 [
   {
     "id": "char1",
-    "name": "Ribby",
-    "birthday": "?",
-    "birthplace": "I'M WALKIN ERE",
-    "species": "Half Vampy"
+    "name": "Test",
+    "species": "",
+    "subspecies": "",
+    "height": "",
+    "birthday": "",
+    "star sign": "",
+    "birthplace": "",
+    "vehicle": "",
+    "pets": "Ribby"
   },
-  {
-    "id": "char2",
-    "name": "Harpy",
-    "birthday": "?",
-    "birthplace": "who knows",
-    "species": "Gleepglorp"
-  }
-]
-
