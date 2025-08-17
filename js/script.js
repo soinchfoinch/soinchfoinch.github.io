@@ -63,12 +63,6 @@ document.querySelectorAll("th").forEach((header, index) => {
   });
 });
 
-// Default sort by "Name"
-window.addEventListener("DOMContentLoaded", () => {
-  const table = document.querySelector("table");
-  sortTableByColumn(table, 0, "string", true);
-});
-
 // -------- App --------
 document.addEventListener("DOMContentLoaded", () => {
   const table = document.getElementById("characterTable");
@@ -104,4 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
     });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const table = document.getElementById("characterTable");
+  sortTableByColumn(table, 0, "string", true);
 });
