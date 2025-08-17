@@ -111,9 +111,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const tr = document.createElement("tr");
         tr.innerHTML = `
           <td><a href="${char.id ? `characters/${char.id}.html` : (char.page || "#")}">${char.name || ""}</a></td>
-          <td>${char.birthday || ""}</td>
-          <td>${char.birthplace || ""}</td>
           <td>${char.species || ""}</td>
+          <td>${char.subspecies || ""}</td>
+          <td>${char.height || ""}</td>
+          <td>${char.birthday || ""}</td>
+          <td>${char.sign || ""}</td>
+          <td>${char.birthplace || ""}</td>
+          <td>${char.vehicle || ""}</td>
+          <td>${char.pets || ""}</td>
         `;
         tbody.appendChild(tr);
       });
