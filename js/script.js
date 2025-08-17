@@ -99,8 +99,3 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
-
-window.addEventListener("DOMContentLoaded", () => {
-  const table = document.getElementById("characterTable");
-  sortTableByColumn(table, 0, "string", true);
-});
