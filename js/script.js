@@ -1,5 +1,5 @@
 function parseBirthday(birthday) {
-  if (!birthday) return 0; // treat missing dates as smallest
+  if (!birthday) return 9999;
 
   let cleaned = birthday
     .replace(/\./g, '') 
