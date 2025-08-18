@@ -1,10 +1,16 @@
-/* Full-page A4 layout */
+@font-face {
+  font-family: "VGA8";
+  src: url("../fonts/Web437_IBM_VGA_8x14.woff") format("woff");
+  font-display: swap;
+}
+
 body {
   background: #808080;
   display: flex;
   justify-content: center;
   padding: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "VGA8", monospace;
+  image-rendering: pixelated;
 }
 
 .page {
