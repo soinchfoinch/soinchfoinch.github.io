@@ -103,3 +103,45 @@ a:hover {
   font-family: inherit;
   font-size: 14px;
 }
+
+/* Win95-style program window */
+.win95-window {
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid #000;
+  background: #c0c0c0;
+  box-shadow: 4px 4px 0 #7b7b7b;
+  font-family: "Tahoma", "MS Sans Serif", sans-serif;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000080;
+  color: white;
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.window-buttons button {
+  background: #c0c0c0;
+  border: 2px outset #fff;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+}
+
+.window-buttons button:active {
+  border: 2px inset #7b7b7b;
+}
+
+.window-content {
+  padding: 10px;
+  background: #fff;
+  border: 2px inset #7b7b7b;
+}
