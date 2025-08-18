@@ -8,7 +8,7 @@ body {
 }
 
 .page {
-  background: white;
+  background: #d4d0cf;
   width: 210mm;
   min-height: 297mm;
   padding: 20mm;
@@ -57,12 +57,11 @@ body {
 
 .info table {
   float: left;
-  width: 72%;
+  width: 73%;
   justify-content: space-between;
   border-collapse: collapse;
-  flex-grow: 1;
-  flex-basis: 30%;
   font-size: 14px;
+  text-overflow: ellipsis;
 }
 
 .security {
@@ -75,8 +74,34 @@ body {
 .risk table{
   font-size: 13px;
   border: 1px solid #000;
-  padding: 8px;
   margin-bottom: 5px;
+}
+
+.risk th {
+  min-width:40px;
+  max-width:40px;
+}
+
+.risk td {
+  min-width:145px;
+  max-width:145px;
+  text-align: right;
+}
+
+.info th {
+  min-width:40px;
+  max-width:40px;
+  border: 1px solid #000;
+  padding: 4px 6px;
+  text-align: left;
+}
+
+.info td {
+  min-width:80px;
+  max-width:80px;
+  border: 1px solid #000;
+  padding: 4px 6px;
+  text-align: left;
 }
 
 .arrest table {
@@ -85,8 +110,6 @@ body {
   font-size: 14px;
 }
 
-.info th,
-.info td,
 .arrest th,
 .arrest td {
   border: 1px solid #000;
@@ -94,8 +117,7 @@ body {
   text-align: left;
 }
 
-.arrest h4,
-.fingerprints h4 {
+.arrest h4 {
   margin: 8px 0 4px 0;
   font-size: 14px;
   text-transform: uppercase;
@@ -105,7 +127,7 @@ body {
   font-size: 13px;
   border: 1px solid #000;
   padding: 8px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .footer {
