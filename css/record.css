@@ -47,13 +47,14 @@ body {
   border: 1px solid #000;
 }
 
-.info table {
+.header-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
 }
 
+.info table,
 .arrest table {
   width: 100%;
   border-collapse: collapse;
