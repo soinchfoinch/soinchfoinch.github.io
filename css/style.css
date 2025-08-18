@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "W95FA";
+  src: url("../fonts/w95fa.woff") format("woff");
+  font-display: swap;
+}
+
 body {
   background-color: #1a1a1a;
   color: #e0e0e0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "W95FA", monospace;
+  letter-spacing: 1px;
   margin: 20px;
 }
 
