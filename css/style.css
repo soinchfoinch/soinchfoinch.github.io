@@ -53,7 +53,7 @@ th.sort-asc::after { border-bottom-color: #000000; }
 th.sort-desc::after { border-top-color: #000000; }
 
 tr:nth-child(even) { background-color: #adadad; }
-tr:hover { background-color: #3a3a3a; }
+tr:hover { background-color: #ebebeb; }
 
 a {
   color: #000000;
