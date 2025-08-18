@@ -11,26 +11,36 @@
   </header>
 
   <main>
-  <table id="characterTable">
-    <thead>
-      <tr>
-      <th data-type="string">Name</th>
-      <th data-type="string">Species</th>
-      <th data-type="string">Subspecies</th>
-      <th data-type="number">Height</th>
-      <th data-type="date">Birthday</th>
-      <th data-type="string">Sign</th>
-      <th data-type="string">Birthplace</th>
-      <th data-type="string">Vehicle</th>
-      <th data-type="string">Pets</th>
-      </tr>
-    </thead>
-    <tbody>
-    <!-- Rows will be injected from characters.json -->
-    </tbody>
-  </table>
+    <div class="win95-window">
+      <div class="title-bar">
+        <span class="title">Character Database</span>
+        <div class="window-buttons">
+          <button class="minimize">_</button>
+          <button class="close">X</button>
+        </div>
+      </div>
+      <div class="window-content">
+        <table id="characterTable">
+          <thead>
+            <tr>
+              <th data-type="string">Name</th>
+              <th data-type="string">Species</th>
+              <th data-type="string">Subspecies</th>
+              <th data-type="number">Height</th>
+              <th data-type="date">Birthday</th>
+              <th data-type="string">Sign</th>
+              <th data-type="string">Birthplace</th>
+              <th data-type="string">Vehicle</th>
+              <th data-type="string">Pets</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  <script defer src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
   </main>
 
   <div class="taskbar">
