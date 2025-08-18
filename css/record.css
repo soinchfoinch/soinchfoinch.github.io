@@ -64,10 +64,9 @@ body {
 }
 
 .security {
-  width: 100%;
   font-size: 13px;
   border: 1px solid #000;
-  padding: 4px 6px;
+  padding: 8px;
 }
 
 .arrest table {
