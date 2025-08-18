@@ -2,151 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Character Record</title>
-  <style>
-    body {
-      background-color: #111;
-      font-family: "Courier New", Courier, monospace;
-      display: flex;
-      justify-content: center;
-      padding: 2rem;
-      color: #eee;
-    }
-
-    .page {
-      width: 794px;   /* Approx A4 width at 96dpi */
-      min-height: 1123px; /* A4 height */
-      background: #fdfdfd;
-      color: #000;
-      padding: 40px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-
-    .agency {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .file-info {
-      text-align: right;
-      font-size: 12px;
-    }
-
-    .record-body {
-      border: 2px solid #000;
-      padding: 20px;
-      flex-grow: 1;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-gap: 20px;
-    }
-
-    .details {
-      font-size: 14px;
-      display: grid;
-      grid-template-columns: 120px auto;
-      row-gap: 6px;
-      column-gap: 10px;
-    }
-
-    .details div {
-      padding: 2px 0;
-    }
-
-    .mugshot {
-      border: 2px solid #000;
-      width: 100%;
-      height: 250px;
-      background: #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-    }
-
-    .fingerprints {
-      border-top: 2px solid #000;
-      margin-top: 40px;
-      padding-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-    }
-
-    .fingerprint-box {
-      width: 60px;
-      height: 60px;
-      border: 1px solid #000;
-      background: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
+  <title>Criminal Record</title>
+  <link rel="stylesheet" href="record.css">
 </head>
 <body>
   <div class="page">
-    <div class="header">
-      <div class="agency">
-        Central Intelligence Agency<br>
-        CRIMINAL RECORD<br>
-        <small>Unclassified Copy</small>
+    <header class="header">
+      <div>
+        <h2>Central Intelligence Agency</h2>
+        <h3>CRIMINAL RECORD</h3>
+        <p class="file-meta">FILE NUMBER: 4751031-708</p>
+        <p class="file-meta">PURPOSE CODE: R-573501-0(S)</p>
+        <p class="file-meta">SRU ID: R567</p>
       </div>
-      <div class="file-info">
-        FILE NO: _________<br>
-        PURPOSE CODE: _______<br>
-        SRU ID: _______<br>
-      </div>
-    </div>
-
-    <div class="record-body">
-      <!-- Left side: details -->
-      <div class="details">
-        <div>Name:</div><div>__________</div>
-        <div>Aliases:</div><div>__________</div>
-        <div>Record ID:</div><div>__________</div>
-        <div>Nationality:</div><div>__________</div>
-        <div>Citizen:</div><div>__________</div>
-        <div>Gender:</div><div>__________</div>
-        <div>Ethnicity:</div><div>__________</div>
-        <div>Height:</div><div>__________</div>
-        <div>Weight:</div><div>__________</div>
-        <div>Eye Color:</div><div>__________</div>
-        <div>Hair Color:</div><div>__________</div>
-        <div>DOB:</div><div>__________</div>
-        <div>Age:</div><div>__________</div>
-      </div>
-
-      <!-- Right side: mugshot -->
       <div class="mugshot">
-        Mugshot Placeholder
+        <img src="mugshot.jpg" alt="Mugshot">
       </div>
-    </div>
+    </header>
 
-    <!-- Fingerprints row -->
-    <div class="fingerprints">
-      <div class="fingerprint-box">L1</div>
-      <div class="fingerprint-box">L2</div>
-      <div class="fingerprint-box">L3</div>
-      <div class="fingerprint-box">L4</div>
-      <div class="fingerprint-box">L5</div>
-      <div class="fingerprint-box">R1</div>
-      <div class="fingerprint-box">R2</div>
-      <div class="fingerprint-box">R3</div>
-      <div class="fingerprint-box">R4</div>
-      <div class="fingerprint-box">R5</div>
-    </div>
+    <section class="info">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>GUY, SOME</td>
+          <th>Aliases</th>
+          <td>DUDE</td>
+        </tr>
+        <tr>
+          <th>Record ID</th>
+          <td>S3568C86527</td>
+          <th>Nationality</th>
+          <td>AMERICAN</td>
+        </tr>
+        <tr>
+          <th>Citizen</th>
+          <td>YES</td>
+          <th>Race / Ethnicity</th>
+          <td>WHITE</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>MALE</td>
+          <th>Height</th>
+          <td>6'9"</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>160</td>
+          <th>Eye Color</th>
+          <td>BROWN</td>
+        </tr>
+        <tr>
+          <th>Hair Color</th>
+          <td>BLACK</td>
+          <th>DOB</th>
+          <td>06/03/81</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>35</td>
+          <th>Ref</th>
+          <td>RT/35699</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="arrest">
+      <h4>Arrest & Sentencing Info</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Offense Code</th>
+            <th>Institution</th>
+            <th>Charge & Description</th>
+            <th>Term</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>02/04/2016</td>
+            <td>8-801</td>
+            <td>Forks Dinks Prison</td>
+            <td>Murder</td>
+            <td>Life</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="other-info">
+      <p><strong>Other Info:</strong></p>
+      <p>* Kind of a chill dude.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="fingerprints">
+        <h4>Fingerprints</h4>
+        <div class="finger-grid">
+          <img src="r-thumb.png" alt="Right Thumb">
+          <img src="r-index.png" alt="Right Index">
+          <img src="r-middle.png" alt="Right Middle">
+          <img src="r-ring.png" alt="Right Ring">
+          <img src="r-little.png" alt="Right Little">
+          <img src="l-thumb.png" alt="Left Thumb">
+          <img src="l-index.png" alt="Left Index">
+          <img src="l-middle.png" alt="Left Middle">
+          <img src="l-ring.png" alt="Left Ring">
+          <img src="l-little.png" alt="Left Little">
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
