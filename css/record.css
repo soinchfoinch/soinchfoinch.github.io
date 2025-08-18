@@ -1,6 +1,6 @@
 /* Full-page A4 layout */
 body {
-  background: #fdfdfd;
+  background: #808080;
   display: flex;
   justify-content: center;
   padding: 20px;
