@@ -47,23 +47,19 @@ body {
   border: 1px solid #000;
 }
 
-.header-row {
+.infocontainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.header-row .info table {
-  flex: 2;
+.info table {
+  justify-content: space-between;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.header-row .mugshot {
-  flex: 1;
-  text-align: right;
-}
-
-.info table,
 .arrest table {
   width: 100%;
   border-collapse: collapse;
