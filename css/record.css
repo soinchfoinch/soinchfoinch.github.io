@@ -61,8 +61,8 @@ body {
 }
 
 .info table {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   float: left;
   width: 73%;
   justify-content: space-between;
