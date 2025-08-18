@@ -2,108 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Character Record - Placeholder</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Character Record</title>
   <style>
     body {
-      font-family: "Courier New", monospace;
       background-color: #111;
-      color: #eee;
+      font-family: "Courier New", Courier, monospace;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .record {
-      background: #f5f5f5;
-      color: #000;
       padding: 2rem;
-      border-radius: 6px;
-      width: 900px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      color: #eee;
     }
+
+    .page {
+      width: 794px;   /* Approx A4 width at 96dpi */
+      min-height: 1123px; /* A4 height */
+      background: #fdfdfd;
+      color: #000;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #000;
-      padding-bottom: 10px;
-      margin-bottom: 15px;
-    }
-    .agency {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .file-info {
-      text-align: right;
-      font-size: 0.9rem;
-    }
-    .file-info div {
-      margin: 2px 0;
-    }
-    .details {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 6px 20px;
-      font-size: 0.95rem;
+      align-items: flex-start;
       margin-bottom: 20px;
     }
-    .details div {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dotted #333;
+
+    .agency {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.4;
     }
-    .photo-section {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
+
+    .file-info {
+      text-align: right;
+      font-size: 12px;
     }
-    .mugshot, .fingerprints {
+
+    .record-body {
       border: 2px solid #000;
-      background: #ddd;
-      width: 200px;
+      padding: 20px;
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .details {
+      font-size: 14px;
+      display: grid;
+      grid-template-columns: 120px auto;
+      row-gap: 6px;
+      column-gap: 10px;
+    }
+
+    .details div {
+      padding: 2px 0;
+    }
+
+    .mugshot {
+      border: 2px solid #000;
+      width: 100%;
       height: 250px;
+      background: #ccc;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8rem;
-      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .fingerprints {
+      border-top: 2px solid #000;
+      margin-top: 40px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .fingerprint-box {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #000;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-  <div class="record">
+  <div class="page">
     <div class="header">
       <div class="agency">
         Central Intelligence Agency<br>
-        <small>CRIMINAL RECORD</small>
+        CRIMINAL RECORD<br>
+        <small>Unclassified Copy</small>
       </div>
       <div class="file-info">
-        <div>FILE NO: ____________</div>
-        <div>PURPOSE CODE: _______</div>
-        <div>SRU ID: _______</div>
+        FILE NO: _________<br>
+        PURPOSE CODE: _______<br>
+        SRU ID: _______<br>
       </div>
     </div>
 
-    <div class="details">
-      <div><strong>Name:</strong> <span>Placeholder Name</span></div>
-      <div><strong>Aliases:</strong> <span>---</span></div>
-      <div><strong>Nationality:</strong> <span>---</span></div>
-      <div><strong>Citizen:</strong> <span>---</span></div>
-      <div><strong>Gender:</strong> <span>---</span></div>
-      <div><strong>Ethnicity:</strong> <span>---</span></div>
-      <div><strong>Height:</strong> <span>---</span></div>
-      <div><strong>Weight:</strong> <span>---</span></div>
-      <div><strong>Eye Color:</strong> <span>---</span></div>
-      <div><strong>Hair Color:</strong> <span>---</span></div>
-      <div><strong>Date of Birth:</strong> <span>---</span></div>
-      <div><strong>Age:</strong> <span>---</span></div>
-      <div><strong>Record ID:</strong> <span>---</span></div>
+    <div class="record-body">
+      <!-- Left side: details -->
+      <div class="details">
+        <div>Name:</div><div>__________</div>
+        <div>Aliases:</div><div>__________</div>
+        <div>Record ID:</div><div>__________</div>
+        <div>Nationality:</div><div>__________</div>
+        <div>Citizen:</div><div>__________</div>
+        <div>Gender:</div><div>__________</div>
+        <div>Ethnicity:</div><div>__________</div>
+        <div>Height:</div><div>__________</div>
+        <div>Weight:</div><div>__________</div>
+        <div>Eye Color:</div><div>__________</div>
+        <div>Hair Color:</div><div>__________</div>
+        <div>DOB:</div><div>__________</div>
+        <div>Age:</div><div>__________</div>
+      </div>
+
+      <!-- Right side: mugshot -->
+      <div class="mugshot">
+        Mugshot Placeholder
+      </div>
     </div>
 
-    <div class="photo-section">
-      <div class="mugshot">MUGSHOT</div>
-      <div class="fingerprints">FINGERPRINTS</div>
+    <!-- Fingerprints row -->
+    <div class="fingerprints">
+      <div class="fingerprint-box">L1</div>
+      <div class="fingerprint-box">L2</div>
+      <div class="fingerprint-box">L3</div>
+      <div class="fingerprint-box">L4</div>
+      <div class="fingerprint-box">L5</div>
+      <div class="fingerprint-box">R1</div>
+      <div class="fingerprint-box">R2</div>
+      <div class="fingerprint-box">R3</div>
+      <div class="fingerprint-box">R4</div>
+      <div class="fingerprint-box">R5</div>
     </div>
   </div>
 </body>
