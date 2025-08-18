@@ -59,7 +59,6 @@ body {
 }
 
 .info table {
-  display: flex;
   justify-content: space-between;
   border-collapse: collapse;
   font-size: 14px;
