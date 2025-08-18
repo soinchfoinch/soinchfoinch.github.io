@@ -72,6 +72,13 @@ body {
   margin-bottom: 5px;
 }
 
+.risk table{
+  font-size: 13px;
+  border: 1px solid #000;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
 .arrest table {
   width: 100%;
   border-collapse: collapse;
@@ -103,22 +110,4 @@ body {
 
 .footer {
   margin-top: auto;
-}
-
-.fingerprints {
-  margin-top: 15px;
-  border-top: 2px solid #000;
-  padding-top: 10px;
-}
-
-.finger-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
-}
-
-.finger-grid img {
-  width: 100%;
-  max-width: 80px;
-  border: 1px solid #000;
 }
