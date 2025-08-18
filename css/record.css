@@ -41,6 +41,13 @@ body {
   margin: 2px 0;
 }
 
+.info mugshot {
+  width: 100%;
+  justify-content: space-between;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
 .mugshot img {
   width: 280px;
   height: auto;
