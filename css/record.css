@@ -42,7 +42,7 @@ body {
 }
 
 .mugshot {
-  display: flex;
+  float: right;
 }
 
 .mugshot img {
@@ -59,7 +59,7 @@ body {
 }
 
 .info table {
-  width: 100%;
+  float: left;
   justify-content: space-between;
   border-collapse: collapse;
   font-size: 14px;
