@@ -83,6 +83,7 @@ a:hover {
 
 .start-button {
   background: #c0c0c0;
+  font-color: #000000;
   border: 2px outset #fff;
   padding: 5px 10px;
   margin-right: 10px;
@@ -97,7 +98,7 @@ a:hover {
 .searchbox {
   flex: 1;
   margin-left: 10px;
-  padding: 4px;
+  padding: 5px 10px;
   border: 2px inset #7b7b7b;
   font-family: inherit;
   font-size: 14px;
