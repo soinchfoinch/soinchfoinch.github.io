@@ -10,6 +10,7 @@ body {
   justify-content: center;
   padding: 20px;
   font-family: "W95FA", monospace;
+  letter-spacing: 1px;
   image-rendering: pixelated;
 }
 
