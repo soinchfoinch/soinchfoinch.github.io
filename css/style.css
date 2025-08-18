@@ -18,18 +18,6 @@ h1 {
   text-align: center;
 }
 
-#searchBox {
-  background: #000;
-  color: #66ccff;
-  border: 1px solid #3a3a3a;
-  padding: 6px 8px;
-  width: 100%;
-  max-width: 480px;
-  display: block;
-  margin: 0 auto 12px;
-  outline: none;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -106,7 +94,7 @@ a:hover {
   border: 2px inset #7b7b7b;
 }
 
-.search-box {
+.searchbox {
   flex: 1;
   margin-left: 10px;
   padding: 4px;
