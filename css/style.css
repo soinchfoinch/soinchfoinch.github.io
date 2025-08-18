@@ -10,6 +10,7 @@ body {
   font-family: "W95FA", monospace;
   letter-spacing: 1px;
   margin: 20px;
+  image-rendering: pixelated;
 }
 
 h1 {
