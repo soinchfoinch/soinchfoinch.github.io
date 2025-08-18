@@ -57,6 +57,7 @@ body {
 
 .info table {
   float: left;
+  width: 100%;
   justify-content: space-between;
   border-collapse: collapse;
   font-size: 14px;
