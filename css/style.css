@@ -49,19 +49,19 @@ th.sort-desc::after {
   top: 50%;
   transform: translateY(-50%);
 }
-th.sort-asc::after { border-bottom-color: #66ccff; }
-th.sort-desc::after { border-top-color: #66ccff; }
+th.sort-asc::after { border-bottom-color: #000000; }
+th.sort-desc::after { border-top-color: #000000; }
 
-tr:nth-child(even) { background-color: #242424; }
+tr:nth-child(even) { background-color: #818181; }
 tr:hover { background-color: #3a3a3a; }
 
 a {
-  color: #66ccff;
+  color: #000000;
   text-decoration: none;
 }
 a:hover {
-  color: #000;
-  background: #66ccff;
+  color: #ffffff;
+  background: #000000;
 }
 
 .taskbar {
