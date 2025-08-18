@@ -52,12 +52,12 @@ body {
 }
 
 .infocontainer {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .info table {
   float: left;
-  width: 70%;
+  width: 72%;
   justify-content: space-between;
   border-collapse: collapse;
   font-size: 14px;
